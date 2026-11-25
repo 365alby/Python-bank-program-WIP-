@@ -107,13 +107,13 @@ def welcome():
         else:
             print("Invalid option, please try again.")
 
-# def save_accounts_to_csv():
-#     with open('accounts.csv', 'w', newline='') as csvfile:
-#         fieldnames = ['Username: ', 'Password: ', 'Age: ', 'Subscription: ', 'Balance: ', 'Sortcode: ', 'Rekening Number: ']
-#         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-#         writer.writeheader()
-#         for account in accounts:
-#             writer.writerow(account)
+def save_accounts_to_csv():
+    with open('accounts.csv', 'w', newline='') as csvfile:
+        fieldnames = ['Username: ', 'Password: ', 'Age: ', 'Subscription: ', 'Balance: ', 'Sortcode: ', 'Rekening Number: ']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        for account in accounts:
+            writer.writerow(account)
 
 while True:
     print("Welcome to the Bank of Choma:")
