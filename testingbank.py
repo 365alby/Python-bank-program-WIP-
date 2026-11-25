@@ -113,7 +113,7 @@ def save_accounts_to_csv():
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writeheader()
         for account in accounts:
-            writer.writerow(account)
+            writer.writerow(account) 
 
 while True:
     print("Welcome to the Bank of Choma:")
